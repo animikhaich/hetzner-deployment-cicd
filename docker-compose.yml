@@ -1,0 +1,7 @@
+services:
+  fastapi-app:
+    image: ghcr.io/animikhaich/hetzner-deployment-cicd:latest
+    ports:
+      - "8521:8521"
+    environment:
+      - PYTHONUNBUFFERED=1
